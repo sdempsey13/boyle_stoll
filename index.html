@@ -10,12 +10,226 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <title>Bootstrap Theme</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,300italic" >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:100,200,300,400,300italic" >
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"/>
+  <title>Boyle &amp; Stoll, CPA</title>
 </head>
 
 <body>
-  <!-- START HERE -->
-
+    <!-- PRE HEADER -->
+    <div id="pre-header">
+        <div class="container">
+            <div class="row py-2 d-flex justify-content-center">
+                <p>Call or email to schedule an appointment: </p>
+                <i class="fas fa-envelope p-1"></i>
+                <p>pstoll@boyle-stoll.com |</p>
+                <i class="fas fa-phone p-1"></i>
+                <a href="tel:+1-516-318-5991">+1 (707) 571-1951</a>
+            </div>
+        </div>
+    </div>
+  
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="main-nav">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/boyle_stoll_logo.png" alt="Boyl & Stoll Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#about-head-section" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services-head-section" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#team-head-section" class="nav-link">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact-head-section" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  
+    <!-- HERO SLIDER -->
+    <section id="hero-slider" class="block">
+        <div id="hero-slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/slider/team.jpg" alt="Slide1" />
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slider/table_dark.jpg" alt="Slide2" />
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slider/office.jpg" alt="Slide3" />
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SERVICES -->
+    <section id="services" class="body-section">
+        <div class="container">
+            <div class="row col-12">
+                <h2>Services</h2>
+            </div>
+            <div class="row">
+               <div class="col-md-3 col-6 text-center">
+                   <a href="#"><i class="fas fa-file img-fluid fas_tax"></i></a>
+                   <p class="py-3">Tax Planning &amp; Prep</p>
+               </div>
+               <div class="col-md-3 col-6 text-center">
+                   <a href="#"><i class="fas fa-search img-fluid fas_audit"></i></a>
+                   <p class="py-3">Audit &amp; Assurance</p>   
+               </div>
+               <div class="col-md-3 col-6 text-center">
+                   <a href="#"><i class="fas fa-balance-scale img-fluid"></i></a>
+                   <p class="py-3">SEC Reporting</p>   
+               </div>
+               <div class="col-md-3 col-6 text-center">
+                   <a href="#"><i class="fas fa-archive img-fluid fas_biz"></i></a>
+                   <p class="py-3">Business Advisory</p>   
+               </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FIRM PROFILE -->
+    <section id="firm-profile" class="body-section">
+        <div class="container">
+            <div class="row col-12">
+                <h2>Firm Profile</h2>
+            </div>
+            
+            <div class="row col-12 align-items-center">
+                <img src="img/favicon.png" alt="">
+                <h5>What We Believe</h5>
+            </div>
+            <div class="row col-12">
+                <p><span class="15">We believe in the value of relationships. We view every client relationship like a partnership, and truly believe that our success is a result of your success. </span></p>
+            </div>
+            
+            <div class="row col-12 align-items-center">
+                <img src="img/favicon.png" alt="">
+                <h5>Our Commitment</h5>
+            </div>
+            <div class="row col-12">
+                <p><span class="15">We are committed to providing close, personal attention to our clients. We take pride in giving you the assurance that the personal assistance you receive comes from years of advanced training, technical experience and financial acumen. Our continual investment of time and resources in professional continuing education, state-of-the-art computer technology and extensive business relationships is indicative of our commitment to excellence.
+                </span></p>
+            </div>
+            
+<!--
+            <div class="row col-12">
+                <img src="img/favicon.png" alt="">
+                <h5>Our Promise</h5>
+            </div>
+            <div class="row col-12">
+                <ul>
+                    <li>Our premiere service is courteous and professional at all times.</li>
+                    <li>Our products and services are always of exceptional quality and designed to add significantly to your business and personal goals.</li>
+                    <li>Your phone calls are returned promptly.</li>
+                    <li>We communicate with you frequently and openly as we build an informed, informative and long-term partnership with you.</li>
+                    <li>Your questions and comments are enthusiastically welcomed, honored and answered.</li>
+                    <li>Your needs and concerns are ALWAYS our highest priority.</li>
+                </ul>
+            </div>
+-->
+            
+        </div>
+    </section>
+    
+    <!-- TEAM -->
+    <section id="team" class="body-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-12 team_intro">
+                    <h2 class="meet">Meet the Team</h2>
+                    <a href="#" class="meet_link">View all team members ></a>
+                </div>
+                
+                
+                
+                
+                
+                <div class="col-lg-3 col-md-6">
+                    <img src="img/team/head_1.jpg" class="img-fluid home_bio_pic" alt="Team Member 1">
+                </div>
+                <div class="col-lg-5 col-md-6">
+                    <h3>Kenneth	Bradley, CPA</h3>
+                    <h4>Tax Partner</h4>
+                    <p class="team_bio" style="display:inline;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente consectetur perspiciatis optio! Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                    <a href="#" class="meet_link" style="display:inline;">More -></a>
+                    <p class="phone">707-571-1951 ext. 207</p>
+                </div>
+                
+                 
+                   
+            </div>
+            <div class="row justify-content-center">.......</div>
+        </div>
+    </section>
+    
+    <!-- CONTACT -->
+    <section id="contact" class="body-section">
+        <div class="container">
+            <div class="row col-12 justify-content-center">
+                <h2>Contact US</h2>
+            </div>
+            <div>
+                <p class="long-copy">
+                    Whether you are a company with assurance, tax planning, and business advisory needs or a public accounting professional looking to advance your career, we would love to talk to you. Call or email us to introduce yourself, or fill out a Request form, and one of our professionals will get back with you shortly.
+                </p>
+            </div>
+            <div class="row">
+                <div class="row col-lg-6">
+                    <div class="row">
+                        <form method="post" action="#" class="contact-form">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Your Name" required>
+                            <br>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Your Email" required>
+                            <label for="message">Drop Us A Line</label>
+                            <textarea name="message" placeholder="Your Message"></textarea> 
+                            <input type="submit" value="Send" class="btn btn-full">
+                        </form>
+                    </div>
+                </div>
+                <div class="row col-lg-6 justify-content-end">
+                    <div class="row col-11">
+                        <img src="/img/map.png" class="map img-fluid" alt="Map">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    <!-- FOOTER -->
+    <footer>
+       <div class="container">
+        <div class="row justify-content-center">
+            <p>&copy; 2018 Boyle & Stoll, CPAs</p>
+        </div>    
+        <div class="row justify-content-center">
+            <ul class="footerList">
+                <li>CPA Services |</li>
+                <li>3755 Brickway Blvd., Ste. 100 |</li>
+                <li>Santa Rosa, CA 95403 |</li>
+                <li>(707) 571-1951 |</li>
+                <li>help@boyle-stoll.com</li>
+            </ul>
+        </div>
+        </div>
+    </footer>
+  
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
