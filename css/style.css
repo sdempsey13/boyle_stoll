@@ -237,22 +237,41 @@ a:active {
 /* SERVICES */
 /* ------------------------------------ */
 
-
-
-#services a:link,
-#services a:visited {
+.fas_tax,
+.fas_audit,
+.fas_sec,
+.fas_biz {
     font-size: 45px;
-    color: #6b512e;
-/*    border: 8px solid #6b512e;*/
-    border-radius: 50%;
+    border: 8px solid #6b512e;
+    border-radius:50%;
+}
+
+.fas_tax {
+    padding: 17px 22px;
+}
+
+.fas_sec {
+    padding: 17px 12px;
+}
+
+.fas_audit,
+.fas_biz {
+    padding: 17px 17px;
 }
 
 #services a:hover,
 #services a:active {
     color: #e1a350;
-/*    border: 8px solid #e1a350;*/
-    border-bottom: none;
+    border: none;
+/*
+    border-radius: 50%;
+    padding: 37px 0px 18px 0px;
+*/
+
 }
+
+
+
 
 @media (max-width: 767px) {
     #services .fas {
@@ -327,9 +346,15 @@ a:active {
 
 .carousel-indicators {
     margin: 0;
+    justify-content: flex-end;
+    bottom: 0px;
 }
 
-
+@media (max-width: 767px) {
+    .carousel-indicators {
+        justify-content: center;
+    }
+}
 /* ------------------------------------ */
 /* CONTACT */
 /* ------------------------------------ */
