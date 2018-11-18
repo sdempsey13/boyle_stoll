@@ -221,7 +221,7 @@ a:active {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 4px 15px;
+    padding: 2px 15px;
     background-color: rgba(200, 200, 200, 0.9);
     z-index: 9999;
 }
@@ -281,15 +281,12 @@ a:active {
 }
 
 .fas_tax {
-    padding: 17px 22px;
-}
-
-.fas_sec {
     padding: 17px 12px;
 }
 
 .fas_audit,
-.fas_biz {
+.fas_biz,
+.fas_sec {
     padding: 17px 17px;
 }
 

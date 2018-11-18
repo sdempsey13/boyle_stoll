@@ -59,7 +59,7 @@
                         <a href="#" class="nav-link">Our Team</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
+                        <a href="#" class="nav-link js--scroll-to-contact">Contact</a>
                     </li>
                     <li class="stickyPhone nav-item"><i class="fas fa-phone"></i>(516) 318-5991</li>
                 </ul>
@@ -93,26 +93,26 @@
             <div class="row">
                <div class="col-md-3 col-6 text-center">
                    <a href="#">
-                       <i class="fas fa-file img-fluid fas_tax"></i>
+                       <i class="fas fa-balance-scale img-fluid fas_tax"></i>
                        <p class="py-3">Tax Planning &amp; Prep</p>
                    </a>
                </div>
                <div class="col-md-3 col-6 text-center">
                    <a href="#">
-                       <i class="fas fa-search img-fluid fas_audit"></i>
-                       <p class="py-3">Audit &amp; Assurance</p>  
+                       <i class="fas fa-book img-fluid fas_audit"></i>
+                       <p class="py-3">Accounting</p>  
                     </a> 
                </div>
                <div class="col-md-3 col-6 text-center">
                    <a href="#">
-                       <i class="fas fa-balance-scale img-fluid fas_sec"></i>
-                       <p class="py-3">SEC Reporting</p>  
+                       <i class="fas fa-chart-line img-fluid fas_sec"></i>
+                       <p class="py-3">Consulting</p>  
                    </a> 
                </div>
                <div class="col-md-3 col-6 text-center">
                    <a href="#">
                        <i class="fas fa-archive img-fluid fas_biz"></i>
-                       <p class="py-3">Business Advisory</p>   
+                       <p class="py-3">Other Services</p>   
                    </a>
                </div>
             </div>
@@ -234,7 +234,7 @@
     </section>
     
     <!-- CONTACT -->
-    <section id="contact" class="body-section">
+    <section id="contact" class="body-section js--section-contact">
         <div class="container">
             <div class="row col-12 justify-content-center">
                 <h2>Contact US</h2>
@@ -302,6 +302,7 @@
   <script>
     $(document).ready(function() {
     
+        /* Sitcky Navigation */
         $('.js--section-services').waypoint(function(direction) {
             if (direction == 'down') {
                 $('nav').addClass('sticky');
@@ -312,6 +313,12 @@
             offset: '23%'
         });
         
+        /* Scroll on Buttons */
+        $('.js--scroll-to-contact').click(function() {
+            $('html, body').animate({scrollTop: $('.js--section-contact').offset().top - 73}, 1000);
+        });
+        
+    });
                                           
         
         
@@ -322,7 +329,6 @@
 //      },
 //      offset: 20 
 //    })
-    })
   </script>
   
 </body>
