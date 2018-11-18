@@ -33,26 +33,35 @@
     <!-- NAV BAR -->
     <nav class="navbar navbar-expand-lg navbar-dark" id="main-nav">
         <div class="container">
-            <a href="index.html" class="navbar-brand">
+            
+            <a href="#pre-header" class="navbar-brand">
                 <img src="img/boyle_stoll_logo.png" alt="Boyl & Stoll Logo" class="logo">
             </a>
+            
+<!--
+            <a href="#pre-header" class="navbar-brand">
+                <img src="img/favicon.png" alt="Boyl & Stoll Logo" class="logoMini">
+            </a>
+-->
+            
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#about-head-section" class="nav-link">About Us</a>
+                        <a href="#" class="nav-link">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#services-head-section" class="nav-link">Services</a>
+                        <a href="#" class="nav-link">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#team-head-section" class="nav-link">Our Team</a>
+                        <a href="#" class="nav-link">Our Team</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact-head-section" class="nav-link">Contact</a>
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
+                    <li class="stickyPhone nav-item"><i class="fas fa-phone"></i>(516) 318-5991</li>
                 </ul>
             </div>
         </div>
@@ -76,27 +85,35 @@
     </section>
     
     <!-- SERVICES -->
-    <section id="services" class="body-section">
+    <section id="services" class="body-section js--section-services">
         <div class="container">
             <div class="row col-12">
                 <h2>Services</h2>
             </div>
             <div class="row">
                <div class="col-md-3 col-6 text-center">
-                   <a href="#"><i class="fas fa-file img-fluid fas_tax"></i></a>
-                   <p class="py-3">Tax Planning &amp; Prep</p>
+                   <a href="#">
+                       <i class="fas fa-file img-fluid fas_tax"></i>
+                       <p class="py-3">Tax Planning &amp; Prep</p>
+                   </a>
                </div>
                <div class="col-md-3 col-6 text-center">
-                   <a href="#"><i class="fas fa-search img-fluid fas_audit"></i></a>
-                   <p class="py-3">Audit &amp; Assurance</p>   
+                   <a href="#">
+                       <i class="fas fa-search img-fluid fas_audit"></i>
+                       <p class="py-3">Audit &amp; Assurance</p>  
+                    </a> 
                </div>
                <div class="col-md-3 col-6 text-center">
-                   <a href="#"><i class="fas fa-balance-scale img-fluid fas_sec"></i></a>
-                   <p class="py-3">SEC Reporting</p>   
+                   <a href="#">
+                       <i class="fas fa-balance-scale img-fluid fas_sec"></i>
+                       <p class="py-3">SEC Reporting</p>  
+                   </a> 
                </div>
                <div class="col-md-3 col-6 text-center">
-                   <a href="#"><i class="fas fa-archive img-fluid fas_biz"></i></a>
-                   <p class="py-3">Business Advisory</p>   
+                   <a href="#">
+                       <i class="fas fa-archive img-fluid fas_biz"></i>
+                       <p class="py-3">Business Advisory</p>   
+                   </a>
                </div>
             </div>
         </div>
@@ -276,11 +293,38 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
-
+  <script src="js/jquery.waypoints.min.js"></script>
   <script>
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
   </script>
+  
+  <script>
+    $(document).ready(function() {
+    
+        $('.js--section-services').waypoint(function(direction) {
+            if (direction == 'down') {
+                $('nav').addClass('sticky');
+            } else {
+                $('nav').removeClass('sticky');
+            }
+        }, {
+            offset: '23%'
+        });
+        
+                                          
+        
+        
+//    var waypoint = new Waypoint({
+//      element: document.getElementById('px-offset-waypoint'),
+//      handler: function(direction) {
+//        notify('I am 20px from the top of the window')
+//      },
+//      offset: 20 
+//    })
+    })
+  </script>
+  
 </body>
 
 </html>

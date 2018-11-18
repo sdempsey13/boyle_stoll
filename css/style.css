@@ -135,18 +135,11 @@ a:link,
 a:visited {
     color:#6b512e;
     text-decoration: none;
-    padding-bottom: 1px;
-    border-bottom: 1px solid transparent;
-    
-    
 }
 
 a:hover,
 a:active {
     color: #6b512e;
-    border-bottom: 1px solid #6b512e;
-    transition: border-bottom 0.2s, color 0.2s;
-    
 }
 
 /* ------------------------------------ */
@@ -185,6 +178,11 @@ a:active {
     margin: 5px 0;
 }
 
+.logoMini {
+    height: 40px;
+    display: none;
+}
+
 .nav-item {
     text-transform: uppercase;
     font-size: 1em;
@@ -212,6 +210,42 @@ a:active {
 .navbar-dark .navbar-toggler {
     color: #6b512e;
     border-color: #6b512e;
+}
+
+.stickyPhone {
+    display: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4px 15px;
+    background-color: rgba(200, 200, 200, 0.9);
+    z-index: 9999;
+}
+
+/*
+.sticky .logo {
+    display: none;
+}
+
+.sticky .logoMini {
+    display: block;
+    float: left;
+    
+}
+*/
+
+.sticky .stickyPhone {
+    color: #6b512e;
+    padding-top: 6px;
+    display: inline-block;
+}
+
+.stickyPhone i {
+    padding-right: 3px;
 }
 
 /* ------------------------------------ */
@@ -263,6 +297,7 @@ a:active {
 #services a:active {
     color: #e1a350;
     border: none;
+    transition: color .2s;
 /*
     border-radius: 50%;
     padding: 37px 0px 18px 0px;
@@ -285,7 +320,7 @@ a:active {
 /* ------------------------------------ */
 
 #firm-profile {
-    background-color: #ebebeb;
+    background-color: rgb(235, 235, 235);
 }
 
 /* ------------------------------------ */
