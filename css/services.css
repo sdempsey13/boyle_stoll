@@ -1,0 +1,109 @@
+/* CSS FOR OUR_TEAM PAGE */
+
+
+/* ------------------------------------ */
+/* HERO IMAGE */
+/* ------------------------------------ */
+
+#services-hero {
+    background-image: url("../img/service_page_head.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    color: #ebebeb;
+}
+
+#services-hero h2:after {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    #services-hero {
+        background-image: url('../img/service_page_head_mobile.jpg');
+        text-align: center;
+    }
+    
+/*
+    #services-hero h2 {
+        color: red;
+    }
+*/
+}
+
+/* ------------------------------------ */
+/* SERVICES BOX */
+/* ------------------------------------ */
+
+.explainer {
+    margin-bottom: 30px;
+}
+
+.parent-collapse {
+    margin-bottom: 25px;
+}
+
+.card {
+    border:none;
+}
+
+.card-text {
+    font-size: 85%;
+}
+
+.btn {
+    border: none;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: #e1a350;
+    border: none;
+}
+
+.btn-full:hover .fas,
+.btn-full:active .fas{
+    color: #6b512e;
+    border: none;
+}
+
+.btn-slim {
+    margin-bottom: 25px;
+}
+
+.btn-slim h3 {
+    font-size: .8em;
+    margin: 4px;
+}
+
+.serv-logo {
+    height: 100%;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+    padding-top: 3px;
+     color: #e1a350;
+}
+
+h3 {
+    margin: 7px 40px;
+    float: left;
+    font-size: 1em;
+}
+
+
+@media (max-width: 767px) {
+    h3 {
+        margin: 7px 0 7px 12px;
+        font-size: .8em;
+    }
+    .btn-slim h3 {
+    font-size: .7em;
+    margin: 0;
+}
+    .btn-slim {
+    margin-bottom: 10px;
+}
+    .card-text {
+    margin-top: 5px;
+}
+}

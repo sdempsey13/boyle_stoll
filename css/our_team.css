@@ -1,0 +1,165 @@
+/* CSS FOR OUR_TEAM PAGE */
+
+
+/* ------------------------------------ */
+/* HERO IMAGE */
+/* ------------------------------------ */
+
+#team-hero {
+    background-image: url("../img/team_page_head.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    color: #ebebeb;
+}
+
+#team-hero h2:after {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    #team-hero {
+        background-image: url('../img/team_page_head_mobile.jpg');
+        text-align: center;
+    }
+    
+/*
+    #team-hero h2 {
+        color: red;
+    }
+*/
+}
+
+/* ------------------------------------ */
+/* TEAM AREA */
+/* ------------------------------------ */
+
+.card {
+    border:none;
+    padding-bottom: 40px;
+}
+
+.card_title {
+    margin-bottom: 15px;
+}
+
+h4 {
+    color: #3c3c3c;
+    font-weight: 300;
+    font-size: 100%;
+    margin-top: 15px; 
+}
+
+.h42 {
+    font-size: 90%;
+}
+
+
+
+
+
+/* Item that holds the image */
+.team-img {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+    border-radius: 8px;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+
+.team-button:link,
+.team-button:visited {
+    color: #ebebeb;
+    border: 1px solid #ebebeb;
+    padding: 3px 7px;
+    border-radius: 5px;
+}
+
+.team-button:hover,
+.team-button:active {
+    color: #ebebeb;
+    border: 1px solid #000;
+    background-color: rgba(46, 46, 46, 0.42);
+    transition: background-color 0.2s;
+    border: 1px solid #ebebeb;
+    padding: 3px 7px;
+    border-radius: 5px;
+}
+
+.card-p {
+    color: #ebebeb;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+/* NEED REPEATING FOR EVERY SINGLE EMPLOYEE */
+
+.middle-trigger-one:hover .card-img{
+    transform: scale(1.15);
+    opacity: .50;
+}
+
+.middle-trigger-two:hover .card-img{
+    transform: scale(1.15);
+    opacity: .50;
+}
+
+.middle-trigger-three:hover .card-img{
+    transform: scale(1.15);
+    opacity: .50;
+}
+
+.middle-one,
+.middle-two,
+.middle-three{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.middle-trigger-one:hover .middle-one {
+  opacity: 1;
+}
+
+.middle-trigger-two:hover .middle-two {
+  opacity: 1;
+}
+
+.middle-trigger-three:hover .middle-three {
+  opacity: 1;
+}
+
+
+@media (max-width: 1091px) and (min-width: 844px) {
+    .card-p {
+        display: none;
+    }
+    .middle-one,
+    .middle-two,
+    .middle-three{
+        top: 25%;
+        left: 58%;
+    }
+
+}
+
+
+
+
+
+
+

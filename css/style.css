@@ -252,6 +252,10 @@ a:active {
 /* HERO SLIDER */
 /* ------------------------------------ */
 
+#hero-slider {
+    display:none;
+}
+
 .carousel .carousel-item {
     width: 100%; /*slider width*/
     max-height: 600px; /*slider height*/
@@ -452,7 +456,7 @@ footer {
 .footerList {
     list-style: none;
     float: none;
-    margin: 18px 0 8px 0;
+    margin: 1px 0 8px 0;
 }
 
 .footerList li {
